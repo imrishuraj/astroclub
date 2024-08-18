@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            background-color: #0E0E0E;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #F0F0F0;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            border-bottom: 2px solid #F0F0F0;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item {
+            background: linear-gradient(145deg, #1A1A1A, #333333);
+            border: 2px solid #4A4A4A;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #333333;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #D1D1D1;
+        }
+        .description span {
+            display: block;
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        .abstract-element {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+        }
+        .abstract-element-2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            bottom: -70px;
+            left: -70px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Inventory</h1>
+    <div class="container">
+        <div class="item">
+            <div class="abstract-element"></div>
+            <img src="1.png" alt="Telescope 1">
+            <div class="description">
+                <span>Telescope 1</span>
+                High magnification for deep sky observations.
+            </div>
+        </div>
+        <div class="item">
+            <div class="abstract-element-2"></div>
+            <img src="2.png" alt="Telescope 2">
+            <div class="description">
+                <span>Telescope 2</span>
+                Portable and perfect for beginners.
+            </div>
+        </div>
+        <div class="item">
+            <div class="abstract-element"></div>
+            <img src="3.png" alt="Telescope 3">
+            <div class="description">
+                <span>Telescope 3</span>
+                Advanced features for detailed viewing.
+            </div>
+        </div>
+        <div class="item">
+            <div class="abstract-element-2"></div>
+            <img src="4.png" alt="Binoculars">
+            <div class="description">
+                <span>Binoculars</span>
+                Great for quick and easy sky scanning.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
